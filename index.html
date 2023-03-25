@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;700&family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Hubballi&family=Inter:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@300;700&family=Raleway:ital,wght@0,200;0,400;0,500;1,400;1,500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ESTOQUE FARMACIA</title>
+</head>
+<body>
+
+    <header>
+        <h1>Home</h1>
+        <h1>Cadastro<br>
+            de Medicamentos</h1>
+        <h1>Cadastro<br>
+            de Vacinas</h1>
+        <h1>Cadastro<br>
+            de Cosméticos</h1>
+    </header>
+
+    <section class="apresentation">
+        <div class="logo-famarcia">
+            <img id="logo" src="logo.svg" alt="">
+        </div>
+        <div class="texts-mains">
+            <h1 id="text-main">Cadastro de Medicamentos</h1>
+            <p id="name-farmacia">Farmácia da Gente</p>
+        </div>
+    </section>
+
+    <section class="main">
+       <form >
+            <label>Nome do Medicamento</label>
+            <input autocomplete="off" id="inputMedicamento" type="text" required="required" placeholder="Dipirona">
+
+            <label>Quantidade Disponível</label>
+            <input autocomplete="off"id="inputqtde" type="text" required="required" placeholder="100">
+
+            <label>Classe de Medicamento</label>
+            <input autocomplete="off"id="inputclasse" type="text" required="required" placeholder="Analgésico" style="margin-bottom: 30px;">
+
+            <button id="btn" >Cadastrar</button>
+       </form>
+       <div>
+        <table border="1" id="dataTable">
+            <thead>
+                <th id="id" >ID</th>
+                <th id="medicamento">MEDICAMENTO</th>
+                <th id="quantidade">QUANTIDADE</th>
+                <th id="classe">CLASSE DE MEDICAMENTO</th>
+                <th id="remover">REMOVER</th>
+            </thead>
+        </table>
+
+       </div>
+
+
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
